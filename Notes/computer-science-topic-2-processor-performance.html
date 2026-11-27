@@ -23,7 +23,7 @@ mark { background-color: #FF0; color: #000; }
     <span>S</span><span>i</span><span>f</span><span>f</span><span>z</span><span>o</span><span>n</span><span>e</span><span>.</span><span>.</span><span>.</span></h1></div>
 	<hr class="solid">
 <div id="Body Text"> 
-<!-- InstanceBeginEditable name="Body Text" --><p class="notenav"><a href="../index.html">Home</a> | <a href="omniindex.html">Omni-Index</a> | Computer Science / Module 1</p>
+<!-- InstanceBeginEditable name="Body Text" --><p class="notenav"><a href="../index.html">Go Home...</a> | <a href="omniindex.html">Go To The Index...</a> | Computer Science / Module 1</p>
 <h1>Computer Science Topic 2 - Processor Performance</h1>
 <div id="notebody">
 <h1 id="primary-factors">Primary Factors</h1>
@@ -33,18 +33,20 @@ mark { background-color: #FF0; color: #000; }
 <li>Amount of cache memory</li>
 </ul>
 <h1 id="clock-speed">Clock Speed</h1>
-<p>The system clock generates an alternating signal of <a href="computer-science-topic-28-primitive-data-types-binary-and-hexadecimal.html">0 and 1s</a>, used to synchronise the processor, at a speed of several billion <a href="physics-topic-2-1-1-physical-quantities-and-units.html">Hz (GHz)</a>. Faster clock = more instructions per second.</p>
+<p>The system clock generates an alternating signal of 0 and 1s, used to synchronise the processor, at a speed of several billion Hz (GHz). Faster clock = more instructions per second. The unit (Hz) and the giga prefix are in <a href="physics-topic-2-1-1-physical-quantities-and-units.html">Physics Topic 2.1.1 - Physical Quantities And Units</a>.</p>
 <h1 id="number-of-cores">Number Of Cores</h1>
-<p>Each <a href="computer-science-topic-3-types-of-processor.html">core</a> is its own CPU, allowing the computer to execute more instructions in parallel, given the software is correctly able to take full advantage of both processors</p>
+<p>Each core is its own CPU, allowing the computer to execute more instructions in parallel, given the software is correctly able to take full advantage of both processors (see <a href="computer-science-topic-3-types-of-processor.html">Computer Science Topic 3 - Types Of Processor</a> for multicore systems)</p>
 <h1 id="amount-and-type-of-cache-memory">Amount And Type Of Cache Memory</h1>
-<p>Cache is a tiny, expensive, fast memory inside of the CPU, allowing access to memory faster than having to traverse the entire distance between the CPU and <a href="computer-science-topic-6-storage-devices.html">RAM</a>. L1 (fastest, smallest, split into instruction and data) -&gt; L2 (slower, bigger) -&gt; L3 (slowest, biggest)</p>
+<p>Cache is a tiny, expensive, fast memory inside of the CPU, allowing access to memory faster than having to traverse the entire distance between the CPU and RAM. L1 (fastest, smallest, split into instruction and data) -&gt; L2 (slower, bigger) -&gt; L3 (slowest, biggest)</p>
 <h1 id="pipelining">Pipelining</h1>
-<p>Pipelining allows the processor to execute each part of the <a href="computer-science-topic-1-processor-components.html">fetch, decode execute</a> simultaneously.</p>
+<p>Pipelining allows the processor to execute each part of the fetch, decode execute simultaneously. See <a href="computer-science-topic-1-processor-components.html">Computer Science Topic 1 - Processor Components</a> for the stages.</p>
 <h1 id="words-and-word-size">Words And Word Size</h1>
 <p>Each word is a group of bytes. When a processor wishes to read a word of data, the address is put on the bus. The width of the address bus determines the maximum possible amount of addressable words, where x is the width and \(2^x\) is the size.<br />
-The databus is similar, where the largest possible word transmittable is \(2^x-1\). See <a href="maths-topic-1-1-index-laws.html">Maths Topic 1.1 - Index Laws</a> for powers.</p>
+The databus is similar, where the largest possible word transmittable is \(2^x-1\). See <a href="maths-topic-1-1-index-laws.html">Maths Topic 1.1 - Index Laws</a> for powers, and <a href="computer-science-topic-28-primitive-data-types-binary-and-hexadecimal.html">Computer Science Topic 28 - Primitive Data Types, Binary and Hexadecimal</a> for binary.</p>
 <h1 id="how-this-relates-to-assembly">How This Relates To Assembly</h1>
-<p>Each instruction must fit into one word, which is split between opcodes (can only have \(2^x\) instructions with x opcode bits), addressing modes, operands, etc etc. (Machine code, assembled from assembly)</p>
+<p>Each instruction must fit into one word, which is split between opcodes (can only have \(2^x\) instructions with x opcode bits), addressing modes, operands, etc etc. (Machine code, assembled from assembly)<br />
+See <a href="computer-science-topic-1-processor-components.html">Computer Science Topic 1 - Processor Components</a> for the registers and the fetch-decode-execute cycle that run those instructions.<br />
+Secondary storage, RAM and ROM are covered in <a href="computer-science-topic-6-storage-devices.html">Computer Science Topic 6 - Storage Devices</a>.</p>
 </div>
 <!-- InstanceEndEditable -->
     </div>    

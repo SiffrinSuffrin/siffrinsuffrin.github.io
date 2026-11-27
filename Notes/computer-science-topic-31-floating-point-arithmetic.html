@@ -23,7 +23,7 @@ mark { background-color: #FF0; color: #000; }
     <span>S</span><span>i</span><span>f</span><span>f</span><span>z</span><span>o</span><span>n</span><span>e</span><span>.</span><span>.</span><span>.</span></h1></div>
 	<hr class="solid">
 <div id="Body Text"> 
-<!-- InstanceBeginEditable name="Body Text" --><p class="notenav"><a href="../index.html">Home</a> | <a href="omniindex.html">Omni-Index</a> | Computer Science / Module 6</p>
+<!-- InstanceBeginEditable name="Body Text" --><p class="notenav"><a href="../index.html">Go Home...</a> | <a href="omniindex.html">Go To The Index...</a> | Computer Science / Module 6</p>
 <h1>Computer Science Topic 31 - Floating Point Arithmetic</h1>
 <div id="notebody">
 <h1 id="fixed-point">Fixed Point</h1>
@@ -58,8 +58,8 @@ positive</p>
 <p>The compromise is range and precision, point to the right = higher range, lower precision (and vice versa).<br />
 In addition only numbers that are multiples of the lowest possible fraction can be represented, so 4.9 -&gt; 4.875</p>
 <h1 id="floating-point">Floating Point</h1>
-<p>When <a href="physics-topic-2-1-2-estimating-physical-quantities.html">ordinary decimal numbers</a> become too big, they are written in the format \(m×10^x\), with m being the &quot;Mantissa&quot; and x being the &quot;<a href="maths-topic-1-1-index-laws.html">eXponent</a>&quot;, for example 5000 = \(0.5×10 ^ 4\).<br />
-This technique can be easily applied to <a href="computer-science-topic-28-primitive-data-types-binary-and-hexadecimal.html">binary</a> too! You can lay out an example 12 bit floating point number like so:</p>
+<p>When ordinary decimal numbers become too big, they are written in the format \(m×10^x\), with m being the &quot;Mantissa&quot; and x being the &quot;eXponent&quot;, for example 5000 = \(0.5×10 ^ 4\). See <a href="maths-topic-1-1-index-laws.html">Maths Topic 1.1 - Index Laws</a>. See <a href="computer-science-topic-28-primitive-data-types-binary-and-hexadecimal.html">Computer Science Topic 28 - Primitive Data Types, Binary and Hexadecimal</a> for the primitive data types, and <a href="physics-topic-2-1-2-estimating-physical-quantities.html">Physics Topic 2.1.2 - Estimating Physical Quantities</a> for orders of magnitude, the decimal version of the same idea.<br />
+This technique can be easily applied to binary too! You can lay out an example 12 bit floating point number like so:</p>
 <table>
 <thead>
 <tr>
@@ -80,7 +80,7 @@ This technique can be easily applied to <a href="computer-science-topic-28-primi
 </table>
 <p>\[010110100011 = 0|.|1011010|0011 = 0.101101 × 2 ^ 3 = 0101.101 = 4 + 1 + 0.5 + 0.125 = 5.625\]</p>
 <h1 id="negative-exponents">Negative Exponents</h1>
-<p>If the <em><strong>first bit</strong></em> (NOT THE SIGN BIT OF THE FLOATING POINT) of the exponent is one, it is a negative number, therefore treat it as a <a href="computer-science-topic-30-binary-arithmetic.html">two&#x27;s complement number</a>. If the <a href="maths-topic-1-4-negative-and-fractional-indices.html">exponent is negative</a>, the decimal point moves to the left, instead of the right.<br />
+<p>If the <em><strong>first bit</strong></em> (NOT THE SIGN BIT OF THE FLOATING POINT) of the exponent is one, it is a negative number, therefore treat it as a two's complement number (see <a href="computer-science-topic-30-binary-arithmetic.html">Computer Science Topic 30 - Binary Arithmetic</a>). If the exponent is negative, the decimal point moves to the left, instead of the right. (see <a href="maths-topic-1-4-negative-and-fractional-indices.html">Maths Topic 1.4 - Negative And Fractional Indices</a>)<br />
 \[010000001110 = 0|.|1000000|1110 = 0.1 × 2 ^ {-2} = 0.001 = 0.125\]</p>
 <h1 id="negative-mantissas">Negative Mantissas</h1>
 <p>If the <em><strong>sign bit</strong></em> (NOT THE FIRST BIT OF THE MANTISSA) of mantissa is one, it is a negative number. Apply two's complement to the mantissa (ie 1.0101101 -&gt; 0.1010011, note the 1 at the start of the mantissa is the sign bit!).<br />
