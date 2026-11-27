@@ -32,8 +32,8 @@ mark { background-color: #FF0; color: #000; }
 1 + 1 + 1 = 1 carry 1<br />
 (column by column)</p>
 <h1 id="signing-negatives-and-subtraction">Signing, Negatives, And Subtraction</h1>
-<p>Sign/Magnitude representation replaces the highest bit with a bit indicating whether the number is negative or not (1 for negative, 0 for positive)<br />
-Easy to understand, but hard to implement computationally</p>
+<p>Sign/Magnitude representation replaces the <a href="computer-science-topic-28-primitive-data-types-binary-and-hexadecimal.html">highest bit</a> with a bit indicating whether the number is negative or not (1 for negative, 0 for positive)<br />
+Easy to understand, but hard to <a href="computer-science-topic-1-processor-components.html">implement computationally</a></p>
 <p>Two's Complement representation has the highest bit become a negative equivalent, ie bit 8 becomes -128, or bit 3 becomes -4 (work out opposite polarity, flip all bits, add 1)<br />
 Harder to understand, extremely easy to compute with. It is also used for the exponent in <a href="computer-science-topic-31-floating-point-arithmetic.html">Computer Science Topic 31 - Floating Point Arithmetic</a>.</p>
 <p>To subtract, negate the number you wish to subtract, then simply add it to the other number.</p>
@@ -41,7 +41,7 @@ Harder to understand, extremely easy to compute with. It is also used for the ex
 <p>-01111001 -&gt; 10000111<br />
 10110011 + 10000111 -&gt; 100111010 -&gt; 00111010<br />
 11010111 + 11011100 -&gt; 110110011<br />
-See <a href="computer-science-topic-28-primitive-data-types-binary-and-hexadecimal.html">Computer Science Topic 28 - Primitive Data Types, Binary and Hexadecimal</a> for binary and hexadecimal, <a href="computer-science-topic-32-bitwise-manipulation-and-masks.html">Computer Science Topic 32 - Bitwise Manipulation And Masks</a> for shifts (which multiply and divide by powers of 2), and <a href="computer-science-topic-1-processor-components.html">Computer Science Topic 1 - Processor Components</a> for the ALU that does this arithmetic.</p>
+See <a href="computer-science-topic-32-bitwise-manipulation-and-masks.html">Computer Science Topic 32 - Bitwise Manipulation And Masks</a> for shifts (which multiply and divide by powers of 2).</p>
 </div>
 <!-- InstanceEndEditable -->
     </div>    

@@ -26,7 +26,7 @@ mark { background-color: #FF0; color: #000; }
 <h1>Computer Science Topic 7 - Functions Of An Operating System</h1>
 <div id="notebody">
 <h1 id="what-is-an-operating-system">What Is An Operating System?</h1>
-<p>An operating system is a program or set of programs that manage the operations of a computer for the user. It acts as a bridge between the user and the hardware, since a user cannot directly communicate to it. A small program in the BIOS called the loader starts the operating system, copying it from secondary storage to RAM.</p>
+<p>An operating system is a program or set of programs that manage the operations of a computer for the user. It acts as a bridge between the user and the hardware, since a user cannot directly communicate to it. A small program in the BIOS called the loader starts the operating system, copying it from <a href="computer-science-topic-6-storage-devices.html">secondary storage</a> to RAM.</p>
 <h1 id="functions-of-an-os">Functions Of An OS</h1>
 <ul>
 <li>Memory management</li>
@@ -38,16 +38,16 @@ mark { background-color: #FF0; color: #000; }
 <h1 id="memory-management">Memory Management</h1>
 <p>An OS manages memory for the user, so they can use several programs simultaneously, and switch between them, as each area of memory for the program is loaded, or moved to the disk.</p>
 <h1 id="paging-and-segmentation">Paging And Segmentation</h1>
-<p>Paging is where memory is divided into fixed size pages of 4KB each, and a process may be held in several of these non-contiguous pages. A &quot;Page Table&quot; stores a link between the physical memory address and logical memory address.<br />
+<p>Paging is where memory is divided into fixed size pages of <a href="computer-science-topic-29-ascii-and-unicode.html">4KB</a> each, and a process may be held in several of these non-contiguous pages. A &quot;Page Table&quot; stores a link between the physical memory address and logical memory address.<br />
 Segmentation is the division of address space into variable length segments based on the program structure.</p>
 <h1 id="virtual-memory">Virtual Memory</h1>
 <p>As more and more memory becomes used, pages of inactive jobs are moved onto disk to make room for the next job. If a large number of programs are loaded, a significant slowdown will occur due to the mismatch of memory and secondary storage.</p>
 <h1 id="interrupt">Interrupt</h1>
-<p>An interrupt is a signal from software, hardware or clock to the CPU. A software interrupt occurs when a program needs to run an OS service, or it terminates. A hardware interrupt occurs when an I/O operation finishes, or an error occurs. Interrupts also occur to indicate it is the next process's turn.</p>
+<p>An interrupt is a signal from software, hardware or <a href="computer-science-topic-2-processor-performance.html">clock</a> to the CPU. A software interrupt occurs when a program needs to run an OS service, or it terminates. A hardware interrupt occurs when an I/O operation finishes, or an error occurs. Interrupts also occur to indicate it is the next process's turn.</p>
 <h1 id="interrupt-service-routines">Interrupt Service Routines</h1>
-<p>When an interrupt occurs, the current state of the CPU is passed to the system stack, and an Interrupt Service Routine is called. Each interrupt has its own routine. Some interrupts are higher priorities than others, and can interrupt an interrupt. Afterwards, the original values of the register are restored.</p>
+<p>When an interrupt occurs, the current state of the CPU is passed to the <a href="computer-science-topic-56-subroutines-and-recursion.html">system stack</a>, and an Interrupt Service Routine is called. Each interrupt has its own routine. Some interrupts are higher priorities than others, and can interrupt an interrupt. Afterwards, the original values of the <a href="computer-science-topic-1-processor-components.html">register</a> are restored.</p>
 <h1 id="processor-scheduling">Processor Scheduling</h1>
-<p>Processor Scheduling is how the operating system allocates processor time to each application fairly and efficiently, to each core. This is what is meant by multitasking. The scheduler is the OS module making sure processor time is used efficiently, trying to:</p>
+<p>Processor Scheduling is how the operating system allocates processor time to each application fairly and efficiently, to <a href="computer-science-topic-3-types-of-processor.html">each core</a>. This is what is meant by <a href="computer-science-topic-8-types-of-operating-system.html">multitasking</a>. The scheduler is the OS module making sure processor time is used efficiently, trying to:</p>
 <ul>
 <li>Maximise throughput</li>
 <li>Be fair to all users</li>
@@ -73,8 +73,8 @@ The algorithm implements many queues, with jobs being able to move between queue
 <h1 id="backing-store-management">Backing Store Management</h1>
 <p>The operating system keeps a directory of where files are so they can be quickly accessed. It also needs to know where areas are free so new files can be placed there. A file management system comes with every OS, and enables a user to move, delete, and protect files.</p>
 <h1 id="peripheral-management">Peripheral Management</h1>
-<p>The OS manages all I/O devices attached to the computer, moving data to and from buffers (spaces in memory to hold temporary I/O data, compensating for the speed difference) while it does other work, and communicating with any devices.<br />
-The loader copies the OS from secondary storage into RAM, see <a href="computer-science-topic-6-storage-devices.html">Computer Science Topic 6 - Storage Devices</a>, which also covers the virtual storage that virtual memory uses. When an interrupt occurs the state of the CPU, including the registers in <a href="computer-science-topic-1-processor-components.html">Computer Science Topic 1 - Processor Components</a>, is passed to the system stack (the stack that recursive calls also fill up in <a href="computer-science-topic-56-subroutines-and-recursion.html">Computer Science Topic 56 - Subroutines and recursion</a>) and an interrupt service routine, which is a subroutine, is run. The scheduler shares processor time between applications and cores, see <a href="computer-science-topic-2-processor-performance.html">Computer Science Topic 2 - Processor Performance</a> and <a href="computer-science-topic-3-types-of-processor.html">Computer Science Topic 3 - Types Of Processor</a> for the clock and multicore systems. Peripheral management covers the devices in <a href="computer-science-topic-4-input-devices.html">Computer Science Topic 4 - Input Devices</a> and <a href="computer-science-topic-5-output-devices.html">Computer Science Topic 5 - Output Devices</a>, and the 4KB pages used in paging use the binary units in <a href="computer-science-topic-29-ascii-and-unicode.html">Computer Science Topic 29 - ASCII and Unicode</a>. Processor scheduling is what lets the multi-tasking and time sharing systems in <a href="computer-science-topic-8-types-of-operating-system.html">Computer Science Topic 8 - Types Of Operating System</a> give each job or user a slice of processor time, and that note also covers the BIOS the loader lives in and the device drivers the OS uses to talk to peripherals.</p>
+<p>The OS manages all <a href="computer-science-topic-4-input-devices.html">I/O devices</a> attached to the computer, moving data to and from buffers (spaces in memory to hold temporary I/O data, compensating for the speed difference) while it does other work, and communicating with any devices.<br />
+Peripheral management also covers the devices in <a href="computer-science-topic-5-output-devices.html">Computer Science Topic 5 - Output Devices</a>.</p>
 </div>
 <!-- InstanceEndEditable -->
     </div>    
