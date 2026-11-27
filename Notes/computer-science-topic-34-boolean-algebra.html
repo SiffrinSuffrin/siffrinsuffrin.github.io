@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Page.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>siffrinsuffr.in - Computer Science Topic 34 - Boolean Algebra</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]}};</script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style type="text/css">
+#notebody table { border-collapse: collapse; margin: 1em 0; }
+#notebody th, #notebody td { border: 1px solid #FFF; padding: 4px 8px; }
+#notebody img { max-width: 100%; }
+.missing { color: #888; border-bottom: 1px dashed #888; cursor: help; }
+mark { background-color: #FF0; color: #000; }
+</style>
+<!-- InstanceEndEditable -->
+<link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="container"><h1 id="title"><span>T</span><span>h</span><span>e</span>
+    <span>S</span><span>i</span><span>f</span><span>f</span><span>z</span><span>o</span><span>n</span><span>e</span><span>.</span><span>.</span><span>.</span></h1></div>
+	<hr class="solid">
+<div id="Body Text"> 
+<!-- InstanceBeginEditable name="Body Text" --><p class="notenav"><a href="../index.html">Home</a> | <a href="omniindex.html">Omni-Index</a> | Computer Science / Module 8</p>
+<h1>Computer Science Topic 34 - Boolean Algebra</h1>
+<div id="notebody">
+<h1 id="boolean-values">Boolean Values</h1>
+<p>A Boolean value is either true or false, stored as 1 or 0 (see <a href="computer-science-topic-28-primitive-data-types-binary-and-hexadecimal.html">Computer Science Topic 28 - Primitive Data Types, Binary and Hexadecimal</a>).</p>
+<h1 id="boolean-operators">Boolean Operators</h1>
+<p>NOT inverts a value. AND is true only if both inputs are true. OR is true if at least one input is true. XOR is true if exactly one input is true, ie the inputs are different.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A AND B</th>
+<th>A OR B</th>
+<th>A XOR B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>NOT A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>A truth table lists every possible combination of inputs, which makes it a proof by exhaustion, see <a href="maths-topic-7-5-methods-of-proof.html">Maths Topic 7.5 - Methods Of Proof</a>.</p>
+<h1 id="de-morgan-s-laws">De Morgan's Laws</h1>
+<p>NOT (A AND B) is the same as (NOT A) OR (NOT B), and NOT (A OR B) is the same as (NOT A) AND (NOT B), ie<br />
+\(\neg(A \land B) = \neg A \lor \neg B\)<br />
+\(\neg(A \lor B) = \neg A \land \neg B\)</p>
+<h1 id="where-boolean-algebra-is-used">Where Boolean Algebra Is Used</h1>
+<p>Conditions in selection statements are combined with AND, OR and NOT, see <a href="computer-science-topic-54-selection.html">Computer Science Topic 54 - Selection</a>. The same operators are applied to every bit of a binary number at once for masking and logical instructions, see <a href="computer-science-topic-32-bitwise-manipulation-and-masks.html">Computer Science Topic 32 - Bitwise Manipulation And Masks</a>, and the ALU carries them out (<a href="computer-science-topic-1-processor-components.html">Computer Science Topic 1 - Processor Components</a>).</p>
+</div>
+<!-- InstanceEndEditable -->
+    </div>    
+	<hr class="solid">
+    <div id="disclaimer">
+    <img src="../Media/amiga_friendly.gif" width="88" height="31" /><img src="../Media/sanehtml.gif" width="88" height="31" /><img src="../Media/anythingbut.gif" width="88" height="31" /><img src="../Media/anonymize.gif" width="88" height="31" /><img src="../Media/crackdesnow.gif" width="88" height="31" /><img src="../Media/apple_fatal_error.gif" width="88" height="31" /><img src="../Media/vocaloid.gif" width="88" height="31" /> <br> 
+Created with Adobe Dreamweaver CS4 (2002), hosted on Github Pages. This website is best viewed on Internet Explorer 8 or equivalent, with a 64KB/S or greater modem, and Jetbrains Mono, because it's the best font ever! </div>
+</body>
+<!-- InstanceEnd --></html>
